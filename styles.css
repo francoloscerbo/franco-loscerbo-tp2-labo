@@ -2,7 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll; 
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -10,6 +11,17 @@ body {
     align-items: center;
     min-height: 100vh;
     position: relative;
+}
+
+.header-franco, .segundo-header {
+    text-shadow: none;
+}
+
+.header, .segundo-header {
+    font-size: 20px; 
+    font-weight: normal; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
 }
 
 video {
@@ -20,9 +32,7 @@ video {
     top: 0;
     left: 0;
     width: 100%;
-    
 }
-
 
 .header-franco {
     background-color: rgba(0, 0, 0, 0.7);
@@ -48,7 +58,7 @@ video {
     flex-grow: 1;
     margin-top: 60px;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
 .dj-tabla {
@@ -123,19 +133,81 @@ video {
 .footer img {
     margin: 0 10px;
     height: 30px;
-
     width: 30px;
 }
 
-@media (max-width: 768px) {
-    .dj-table {
-        grid-template-columns: 1fr;
-
-        width: 90%;
+@media (max-width: 610px) {
+    .main-franco {
+        margin-top: 20px; 
     }
 
-    .main-container {
+    .dj-tabla {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .plan {
+        width: 90%; 
         padding: 10px;
-        margin-top: 20px;
+    }
+
+    .features li {
+        margin: 5px 0;
+    }
+
+    .segundo-header {
+        font-size: 20px; 
+    }
+
+    .footer {
+        padding: 10px;
+    }
+
+    .footer img {
+        height: 20px; 
+        width: 20px;
     }
 }
+
+
+@media (max-width: 280px) {
+    .dj-tabla {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .main-franco {
+        margin-top: 10px;
+    }
+
+    .header-franco {
+        padding: 5px 0;
+    }
+
+    .header {
+        font-size: 20px;
+    }
+
+    .plan {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .features li {
+        margin: 5px 0;
+    }
+
+    .segundo-header {
+        font-size: 20px;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+
+    .footer img {
+        height: 20px;
+        width: 20px;
+    }
+}
+
