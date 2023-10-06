@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+video {
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+}
+
+
+.header-franco {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    color: #fff;
+}
+
+.header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin: 0;
+}
+
+.main-franco {
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column; 
+}
+
+.dj-tabla {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    display: grid;
+    margin-top: 20px;
+}
+
+.plan {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin: 10px;
+}
+
+.plan:hover {
+    transform: scale(1.05);
+}
+
+.recomendacion {
+    border: 2px solid #a046bb;
+}
+
+.btn {
+    background-color: #7519c0;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+}
+
+.features li {
+    margin: 10px 0;
+}
+
+.segundo-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-top: 20px;
+}
+
+.footer {
+    background-color: #7519c0;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer img {
+    margin: 0 10px;
+    height: 30px;
+
+    width: 30px;
+}
+
+@media (max-width: 768px) {
+    .dj-table {
+        grid-template-columns: 1fr;
+
+        width: 90%;
+    }
+
+    .main-container {
+        padding: 10px;
+        margin-top: 20px;
+    }
+}
